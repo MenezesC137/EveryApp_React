@@ -1,4 +1,5 @@
 {
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "src/loader.js",
@@ -8,13 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MenezesC137/EveryApp_React"
+    "url": "git+https://github.com/MenezesC137/EveryApp_React.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Carlos Santos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MenezesC137/EveryApp_React"
+    "url": "https://github.com/MenezesC137/EveryApp_React/issues"
   },
   "homepage": "https://github.com/MenezesC137/EveryApp_React#readme",
   "dependencies": {
