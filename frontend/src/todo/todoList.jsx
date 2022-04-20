@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 import IconButton from "../template/iconButton";
 import { markAsDone, markAsPending, remove } from "./todoActions";
 
-const TodoList = props => {
+const TodoList = (props) => {
   const renderRows = () => {
     const list = props.list || [];
     return list.map((todo) => (
@@ -48,13 +48,11 @@ const TodoList = props => {
   );
 };
 
-const mapStateToProps = state => ({
-  list: state.todo.list
-})
+const mapStateToProps = (state) => ({
+  list: state.todo.list,
+});
 
-const mapDispatchToProps = (dispatch) => bindActionCreators(
-  { markAsDone, markAsPending, remove },
-  dispatch
-)
+const mapDispatchToProps = (dispatch) =>
+  bindActionCreators({ markAsDone, markAsPending, remove }, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(TodoList)
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
